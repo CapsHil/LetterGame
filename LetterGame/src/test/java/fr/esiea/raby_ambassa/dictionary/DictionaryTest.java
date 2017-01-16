@@ -1,6 +1,8 @@
-package fr.esiea.unique.binome.name.dictionary;
+package fr.esiea.raby_ambassa.dictionary;
 
 import org.junit.Before;
+
+import fr.esiea.raby_ambassa.dictionary.IDictionary;
 
 import static junit.framework.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
