@@ -13,15 +13,15 @@ public class Parser {
 		
 	}
 	
-	public static ArrayList<String> parse(String fileURL) {
+	public static ArrayList<Word> parse(String fileURL) {
 		FileReader input;
-		ArrayList<String> parsedList = new ArrayList<String>();
+		ArrayList<Word> parsedList = new ArrayList<Word>();
 		try {
 			input = new FileReader(fileURL);
 			BufferedReader buffRead = new BufferedReader(input);
-			String line = null;
+			String line;
 			while((line = buffRead.readLine()) != null)
-				parsedList.add(line);
+				parsedList.add(new Word(line, null));
 			buffRead.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -31,4 +31,5 @@ public class Parser {
 		}
 		return parsedList;
 	}
+
 }

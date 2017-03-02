@@ -15,7 +15,7 @@ public class Log {
             System.out.println(log);
     }
 
-    public void verbose(String log) {
+    public static void verbose(String log) {
         if(Application.LOG_LVL == "verbose")
             System.out.println(log);
     }

@@ -7,8 +7,8 @@ public class Dictionnary implements IDictionary{
 	private static Dictionnary instance = new Dictionnary();
 	
 	private Dictionnary() {
-		ArrayList<String> parsedDictionnary = Parser.parse("src/main/resources/dico.txt");
-		Log.debug(parsedDictionnary.toString());
+		ArrayList<Word> parsedDictionnary = Parser.parse("src/main/resources/dico.txt");
+		Log.verbose(parsedDictionnary.toString());
 	}
 	
 	public static Dictionnary getInstance() {
