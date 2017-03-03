@@ -1,5 +1,14 @@
 # TP Architecture Logicielle / Inf4043 - 2017 - Jeux de lettres
 
+Voir le [README](https://github.com/CapsHil/LetterGame/blob/master/LetterGame/README.md) du projet
+
+
+----
+
+
+# Rappel du sujet
+
+
 - Date de rendu : 12/02/2017 23h - pas de retard accepté
 - Binôme accepté
 - Contacts : 
