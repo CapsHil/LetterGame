@@ -17,14 +17,13 @@ public class Application {
 
 	public static String LOG_LVL = "silent";
 
-	private static PlayerList players;
+    private static PlayerList players;
 	private static int nbPlayers;
 	private static CommonPot commonPot;
 	private static Dictionnary dictionnary;
-	private static WordList words;
+    private static WordList words;
 
 	private static BufferedReader br;
-	private static char[] orderArray;
 	private static boolean endOfGame = false;
 	private static boolean retry = false;
 
@@ -66,7 +65,7 @@ public class Application {
 			System.err.println("Invalid Format!");
 		}
 
-		orderArray = new char[nbPlayers];
+        char[] orderArray = new char[nbPlayers];
 		for(int i=0; i<nbPlayers; i++) {
 			System.out.print("\nEnter name for player "+ (i+1)+": ");
 			players.addPlayer(new Player(br.readLine()));

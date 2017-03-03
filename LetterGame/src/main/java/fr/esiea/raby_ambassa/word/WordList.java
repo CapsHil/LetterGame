@@ -45,10 +45,10 @@ public class WordList {
 
     public String getWordsOf(Player player) {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("Words of " + player.getName() + " :\n");
+        stringBuilder.append("Words of ").append(player.getName()).append(" :\n");
         for (Word word: words) {
            if(word.getOwner().equals(player)) {
-                stringBuilder.append(word.getWord() + "\n");
+                stringBuilder.append(word.getWord()).append("\n");
            }
         }
         stringBuilder.append("\n");

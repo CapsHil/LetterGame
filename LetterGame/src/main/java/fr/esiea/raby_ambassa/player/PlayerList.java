@@ -41,7 +41,7 @@ public class PlayerList {
         char tmp;
         for(int i=0; i<players.size(); ++i) {
             for(int j=i+1; j<players.size(); ++j) {
-                if(orderArray[i] > orderArray[j]) {
+                if (orderArray[i] > orderArray[j]) {
                     tmp = orderArray[i];
                     orderArray[i] = orderArray[j];
                     orderArray[j] = tmp;

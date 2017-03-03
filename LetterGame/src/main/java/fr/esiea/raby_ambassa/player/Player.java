@@ -1,7 +1,7 @@
 package fr.esiea.raby_ambassa.player;
 
 /**
- * Created by capshil on 20/02/2017.
+ * Created by zenika on 20/02/2017.
  */
 public class Player {
 

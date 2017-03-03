@@ -1,4 +1,4 @@
-package fr.esiea.raby_ambassa.dictionnary;
+package fr.esiea.raby_ambassa.game;
 
 import fr.esiea.raby_ambassa.game.CommonPot;
 import junit.framework.TestCase;
