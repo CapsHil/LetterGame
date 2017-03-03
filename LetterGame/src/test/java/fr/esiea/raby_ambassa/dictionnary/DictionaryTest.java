@@ -1,4 +1,4 @@
-package fr.esiea.raby_ambassa.dictionary;
+package fr.esiea.raby_ambassa.dictionnary;
 
 import junit.framework.TestCase;
 import org.junit.Before;
@@ -15,7 +15,7 @@ public class DictionaryTest extends TestCase{
     private IDictionary dictionary;
 
     @Before
-    public void setup() {
+    public void init() {
         dictionary = Dictionnary.getInstance();
     }
 

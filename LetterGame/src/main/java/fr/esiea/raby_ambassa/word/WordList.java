@@ -55,6 +55,16 @@ public class WordList {
         return stringBuilder.toString();
     }
 
+    public int getNumberOfWordsOf(Player player) {
+        int numberOfWord = 0;
+        for (Word word: words) {
+            if(word.getOwner().equals(player)) {
+                numberOfWord++;
+            }
+        }
+        return numberOfWord;
+    }
+
     @Override
     public String toString() {
         return "WordList{" +

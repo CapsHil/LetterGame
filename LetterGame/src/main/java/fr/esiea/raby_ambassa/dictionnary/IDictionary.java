@@ -1,6 +1,4 @@
-package fr.esiea.raby_ambassa.dictionary;
-
-import fr.esiea.raby_ambassa.word.Word;
+package fr.esiea.raby_ambassa.dictionnary;
 
 /**
  * Created on 16/01/17.

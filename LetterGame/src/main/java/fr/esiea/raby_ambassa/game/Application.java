@@ -1,7 +1,7 @@
-package fr.esiea.raby_ambassa;
+package fr.esiea.raby_ambassa.game;
 
-import fr.esiea.raby_ambassa.dictionary.CommonPot;
-import fr.esiea.raby_ambassa.dictionary.Dictionnary;
+import fr.esiea.raby_ambassa.dictionnary.Dictionnary;
+import fr.esiea.raby_ambassa.game.CommonPot;
 import fr.esiea.raby_ambassa.player.Player;
 import fr.esiea.raby_ambassa.player.PlayerList;
 import fr.esiea.raby_ambassa.utils.LetterGenerator;
@@ -32,7 +32,7 @@ public class Application {
 
 		dictionnary = Dictionnary.getInstance();
 		words = WordList.getInstance();
-		players = new PlayerList();
+		players = PlayerList.getInstance();
 		commonPot = CommonPot.getInstance();
 		br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Welcome to play Letter Game !");
@@ -74,7 +74,7 @@ public class Application {
 			orderArray[i] = letter;
 			commonPot.addLetter(letter);
 		}
-
+        System.out.println(orderArray.length +" "+ nbPlayers);
 		players.setPlayerOrder(orderArray);
 
 	}
@@ -120,6 +120,11 @@ public class Application {
                 System.out.println("Noob!");
             }
             System.out.println("\n");
+            if(words.getNumberOfWordsOf(player) >= 10) {
+                System.out.println(player.getName() + " won the game !");
+                endOfGame = true;
+                retry = false;
+            }
         }while(retry);
     }
 

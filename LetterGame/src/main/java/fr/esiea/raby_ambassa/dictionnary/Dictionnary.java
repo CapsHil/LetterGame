@@ -1,4 +1,4 @@
-package fr.esiea.raby_ambassa.dictionary;
+package fr.esiea.raby_ambassa.dictionnary;
 
 import fr.esiea.raby_ambassa.utils.Log;
 import fr.esiea.raby_ambassa.utils.Parser;

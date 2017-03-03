@@ -9,10 +9,16 @@ import java.util.Collections;
  */
 public class PlayerList {
 
+    private static PlayerList instance = new PlayerList();
+
     private ArrayList<Player> players;
 
-    public PlayerList(){
+    private PlayerList(){
         players = new ArrayList<Player>();
+    }
+
+    public static PlayerList getInstance() {
+        return instance;
     }
 
     public void addPlayer(Player player) {

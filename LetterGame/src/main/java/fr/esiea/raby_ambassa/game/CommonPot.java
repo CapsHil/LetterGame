@@ -1,4 +1,4 @@
-package fr.esiea.raby_ambassa.dictionary;
+package fr.esiea.raby_ambassa.game;
 
 import java.util.ArrayList;
 

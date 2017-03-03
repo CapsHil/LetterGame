@@ -1,6 +1,6 @@
 package fr.esiea.raby_ambassa.utils;
 
-import fr.esiea.raby_ambassa.Application;
+import fr.esiea.raby_ambassa.game.Application;
 
 /**
  * Created by capshil on 20/02/2017.
