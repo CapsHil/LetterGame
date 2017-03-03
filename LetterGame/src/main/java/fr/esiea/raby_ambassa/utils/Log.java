@@ -1,6 +1,6 @@
-package fr.esiea.raby_ambassa.dictionary;
+package fr.esiea.raby_ambassa.utils;
 
-import java.awt.peer.SystemTrayPeer;
+import fr.esiea.raby_ambassa.Application;
 
 /**
  * Created by capshil on 20/02/2017.

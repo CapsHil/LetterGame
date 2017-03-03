@@ -1,4 +1,4 @@
-package fr.esiea.raby_ambassa.dictionary;
+package fr.esiea.raby_ambassa.player;
 
 /**
  * Created by capshil on 20/02/2017.
@@ -11,6 +11,9 @@ public class Player {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
 
     @Override
     public String toString() {

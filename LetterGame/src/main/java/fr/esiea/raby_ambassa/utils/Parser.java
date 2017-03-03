@@ -1,11 +1,12 @@
-package fr.esiea.raby_ambassa.dictionary;
+package fr.esiea.raby_ambassa.utils;
+
+import fr.esiea.raby_ambassa.word.Word;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Parser {
 
