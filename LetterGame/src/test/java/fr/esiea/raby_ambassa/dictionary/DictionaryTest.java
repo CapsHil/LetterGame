@@ -1,24 +1,25 @@
 package fr.esiea.raby_ambassa.dictionary;
 
+import junit.framework.TestCase;
 import org.junit.Before;
-
-import fr.esiea.raby_ambassa.dictionary.IDictionary;
-
-import static junit.framework.Assert.assertTrue;
-import static org.junit.Assert.assertFalse;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /**
  * Unit test sample for Dictionary.
  */
-public class DictionaryTest {
+@RunWith(JUnit4.class)
+public class DictionaryTest extends TestCase{
 
     private IDictionary dictionary;
 
     @Before
     public void setup() {
-        //TODO
+        dictionary = Dictionnary.getInstance();
     }
 
+    @Test
     public void testIsWord() {
         assertTrue(dictionary.isWord("maman"));
         assertFalse(dictionary.isWord("namam"));
