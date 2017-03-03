@@ -33,9 +33,9 @@ L'architecture est composé de 5 packages différents :
 
 ----------
 
-Principes/Design pattern
+Principes et Design pattern
  
 L'application respecte le Single responsability principle et l'Open/close principle. En effet, chaque class/méthode à une seule et unique responsabilité, ce qui assure d'avoir un découpage du code optimal (il suffit donc de bien découper son code pour le respecter). 
-De plus, les class sont totalement fermées à la modification, mais l'extension reste possible pour des améliorations futures. Pour ce faire, nous avons veillez à ne laisser en 'public' seulement les fonctionnalités utiles et qui ne peuvent pas 
+De plus, les class sont totalement fermées à la modification, mais l'extension reste possible pour des améliorations futures. Par exemple, il a été facile d'étendre la class Player à VirtualPlayer lors de la création de l'IA. 
 
 Le design pattern Singleton a été utilisé pour les class Dictionnary, PlayerList, WordList et CommonPot, pour la simple et bonne raison qu'il ne doit y avoir qu'une seule et unique instance de ces class. Pour ce faire, tout les constructeur sont passés en `private`, et une instance de la class est créée à l'execution du programme. Il ne reste plus qu'a y acceder via un 'getter'.

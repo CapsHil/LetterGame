@@ -38,8 +38,18 @@ public class CommonPot {
         }
     }
 
+    public int getNumberOfLetters() {
+        return commonPot.size();
+    }
+
+    public ArrayList<Character> getCommonPot() {
+        return commonPot;
+    }
+
+    @SuppressWarnings("unchecked")
     public boolean isWordAvailable(String word) {
 
+        //Can't find easy way to check cast...
         tmp = (ArrayList<Character>) commonPot.clone();
         for (Character character: word.toCharArray())
             if(!this.removeLetterFromTmp(character))
